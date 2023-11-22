@@ -6,6 +6,10 @@
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
 
+  @include mobile {
+    background-image: url("/hero.png");
+  }
+
   .wrapper {
     max-width: 1366px;
     height: 100%;
@@ -67,6 +71,9 @@
       img {
         width: 50px;
       }
+      @include mobile {
+        // disp;
+      }
     }
   }
 
@@ -90,6 +97,7 @@
       // height: 100%;
       object-fit: cover;
       @include mobile {
+        display: none;
         width: 100%;
         height: 50px;
       }
