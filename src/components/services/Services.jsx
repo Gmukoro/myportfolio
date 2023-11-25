@@ -72,7 +72,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Collaboration and Communication</h2>
+          <h2>Collaboration & Communication</h2>
           <p>
             Effective collaboration with cross-functional teams, including
             designers and backend developers.
@@ -83,7 +83,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Continuous Learning and Problem-Solving</h2>
+          <h2>Learning & Problem-Solving</h2>
           <p>
             Commitment to continuous learning, staying updated on the latest
             frontend technologies and best practices.

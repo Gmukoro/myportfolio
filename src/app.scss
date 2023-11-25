@@ -13,6 +13,7 @@ html {
 body {
   background-color: #0c0c1d;
   color: lightgray;
+  // white-space: pre-wrap;
 }
 
 a {
@@ -25,6 +26,18 @@ section {
   width: 100vw;
   scroll-snap-align: center;
   overflow: hidden;
+}
+
+@mixin galaxyS8 {
+  @media (max-width: 360) {
+    @content;
+  }
+}
+
+@mixin smallMobile {
+  @media (max-width: 390) {
+    @content;
+  }
 }
 
 @mixin mobile {
