@@ -50,23 +50,19 @@
         }
       }
 
-      .buttons {
-        .buttons a {
-          cursor: pointer;
-        }
-
-        button {
-          padding: 20px;
-          border: 1px solid white;
-          border-radius: 10px;
-          background-color: transparent;
-          color: white;
-          margin-right: 20px;
-          cursor: pointer;
-          font-weight: 300;
-          z-index: 40;
-        }
+      // .button {
+      button {
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        margin-right: 20px;
+        cursor: pointer;
+        font-weight: 300;
+        z-index: 40;
       }
+      // }
 
       img {
         width: 50px;
