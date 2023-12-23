@@ -6,9 +6,16 @@
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
 
-  @include mobile {
-    background-image: url("/hero.png");
-  }
+  // @include tablet {
+  //   background-image: url("/hero.png");
+  //   object-fit: cover;
+  //   height: 100rem;
+  //   display: flex;
+  // }
+
+  // @include mobile {
+  //   background-image: url("/hero.png");
+  // }
 
   .wrapper {
     max-width: 1366px;
@@ -21,12 +28,34 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
       gap: 40px;
+
+      @include desktop {
+        margin-left: 10rem;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      @include tablet {
+        margin: 0 0;
+        height: 50%;
+        width: 100%;
+        gap: 60px;
+        align-items: center;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+      }
 
       @include mobile {
         height: 50%;
         width: 100%;
-        gap: 20px;
+        gap: 40px;
         align-items: center;
         text-align: center;
 
@@ -38,6 +67,21 @@
         font-size: 30px;
         color: rebeccapurple;
         letter-spacing: 10px;
+
+        @include tablet {
+          font-size: 50px;
+        }
+
+        @include mobile {
+          font-size: 30px;
+        }
+        @include smallMobile {
+          font-size: 25px;
+        }
+
+        @include galaxyfold {
+          font-size: 20px;
+        }
       }
 
       h1 {
@@ -48,27 +92,46 @@
           font-size: 36px;
           z-index: 99;
         }
+        @include smallMobile {
+          font-size: 30px;
+        }
+
+        @include galaxyfold {
+          font-size: 28px;
+        }
       }
 
-      // .button {
       button {
-        padding: 20px;
-        border: 1px solid white;
-        border-radius: 10px;
-        background-color: transparent;
-        color: white;
-        margin-right: 20px;
+        width: 400px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: rgb(228, 218, 199);
+        border: none;
+        font-size: 24px;
+        z-index: 99;
         cursor: pointer;
-        font-weight: 300;
-        z-index: 40;
+
+        @include mobile {
+          font-size: 16px;
+          width: 150px;
+          height: 50px;
+          margin-bottom: 0;
+        }
+        @include smallMobile {
+          font-size: 14px;
+          width: 150px;
+          height: 25px;
+          margin-bottom: 0;
+        }
       }
-      // }
 
       img {
         width: 50px;
-      }
-      @include mobile {
-        // disp;
+        @include mobile {
+          width: 50px;
+
+          margin-left: 8rem;
+        }
       }
     }
   }
@@ -79,8 +142,15 @@
     top: 0;
     right: 0;
 
+    // @include tablet {
+    //   height: 50%;
+    //   width: 100%;
+    //   top: unset;
+    //   bottom: 0;
+    // }
+
     @include mobile {
-      height: 50%;
+      height: 100%;
       width: 100%;
       top: unset;
       bottom: 0;
@@ -89,13 +159,16 @@
     img {
       width: 100%;
       height: 100%;
-      // width: 100%;
-      // height: 100%;
+
       object-fit: cover;
+
+      // @include tablet {
+      //   display: none;
+      // }
+
       @include mobile {
-        display: none;
         width: 100%;
-        height: 50px;
+        height: 100%;
       }
     }
   }
@@ -108,5 +181,9 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+
+    @include mobile {
+      // bottom: -130px;
+    }
   }
 }

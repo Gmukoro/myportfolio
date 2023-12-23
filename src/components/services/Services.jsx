@@ -30,7 +30,7 @@ const Services = () => {
       variants={variants}
       initial="initial"
       // animate="animate"
-      // whileInView="animate"
+      whileInView="animate"
       ref={ref}
       animate={"animate"}
     >

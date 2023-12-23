@@ -24,6 +24,16 @@
       font-size: 20px;
       color: gray;
       text-align: right;
+
+      @include mobile {
+        font-size: 20px;
+        margin-right: 1rem;
+      }
+
+      @include galaxyfold {
+        font-size: 14px;
+        margin-right: 1rem;
+      }
     }
 
     hr {
@@ -128,8 +138,8 @@
       h2 {
         @include smallMobile {
           align-items: center;
-          font-size: 14px;
-          color: red;
+          font-size: 18px;
+          color: rgb(241, 235, 235);
         }
       }
 

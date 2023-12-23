@@ -12,10 +12,18 @@
     color: orange;
     font-size: 36px;
 
+    @include tablet {
+      padding-bottom: calc(100vh - 20px);
+      // font-size: 40px;
+    }
+
     @include mobile {
       padding-bottom: calc(100vh - 20px);
       font-size: 12px;
     }
+    // @include galaxyS8 {
+    //   padding-bottom: calc(100vh - 10px);
+    // }
 
     .progressBar {
       height: 10px;
@@ -39,7 +47,10 @@
       align-items: center;
       justify-content: center;
       gap: 50px;
-
+      @include tablet {
+        flex-direction: column;
+        // height: 100vh;
+      }
       @include mobile {
         flex-direction: column;
       }
@@ -48,18 +59,22 @@
         flex: 1;
         height: 50%;
 
+        @include tablet {
+          max-height: 100%;
+        }
+
         @include mobile {
-          width: 100%;
-          max-height: 300px;
+          // width: 100%;
+          max-height: 100%;
         }
 
         img {
           width: 100%;
-          height: 100%;
           object-fit: cover;
 
           @include mobile {
-            object-fit: contain;
+            height: 60%;
+            width: 100%;
           }
         }
       }
@@ -70,9 +85,22 @@
         flex-direction: column;
         gap: 30px;
 
+        @include desktop {
+        }
+
+        @include tablet {
+          // gap: 20px;
+
+          transform: none !important;
+          margin: 0 10rem;
+          align-items: center;
+          text-align: center;
+        }
+
         @include mobile {
           transform: none !important;
           padding: 10px;
+          margin: 0 6rem;
           align-items: center;
           text-align: center;
         }
@@ -80,8 +108,16 @@
         h2 {
           font-size: 72px;
 
+          @include desktop {
+            font-size: 65px;
+          }
+
+          @include tablet {
+            font-size: 50px;
+          }
+
           @include mobile {
-            font-size: 36px;
+            font-size: 30px;
           }
         }
 
@@ -89,8 +125,15 @@
           color: gray;
           font-size: 20px;
 
+          @include tablet {
+            display: flex;
+            margin-bottom: 4rem;
+            font-size: 40px;
+          }
           @include mobile {
             font-size: 16px;
+            margin-bottom: 2rem;
+            letter-spacing: 0.02em;
           }
         }
 
@@ -101,6 +144,16 @@
           padding: 10px;
           width: 200px;
           cursor: pointer;
+
+          @include tablet {
+            // position: absolute;
+
+            font-size: 30px;
+            width: 20rem;
+          }
+          @include mobile {
+            font-size: medium;
+          }
         }
       }
     }
