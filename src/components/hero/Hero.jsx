@@ -50,9 +50,9 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>GODSPOWER MUKORO</motion.h2>
           <motion.h1 variants={textVariants}>Front-End Engineer</motion.h1>
           <motion.div variants={textVariants} className="button">
-            <motion.button variants={textVariants}>
+            {/* <motion.button variants={textVariants}>
               <a href="#Contact">Contact Me</a>
-            </motion.button>
+            </motion.button> */}
             {/* <button type="button">Contact Me</button> */}
           </motion.div>
           {/*  */}
