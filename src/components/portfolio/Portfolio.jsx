@@ -6,7 +6,7 @@ const items = [
   {
     id: 1,
     title: "E-Commerce App",
-    img: "",
+    img: "ecommerce-website-picture.png",
     desc: "Elevate Your Shopping Experience. Immerse yourself in the future of online shopping with our E-Commerce Platform, meticulously crafted with a blend of JavaScript, React, TypeScript, and CSS. Discover a seamless and intuitive shopping journey, where the frontend harmonizes with the backend to create a visually stunning and responsive interface. ",
   },
   {
